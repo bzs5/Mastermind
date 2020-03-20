@@ -1,2 +1,5 @@
 # Mastermind
-Implementation of Mastermind game and Donald Knuth's algorithm for solving it
+
+Mastermind is a game for two players designed by Mordechai Meirovitz.  In the game, one player devises a code consisting of four pegs, each of which can be of six different colors.  The other player guesses the code, and is hinted further at the code via two sets of feedback: the number of pegs exactly correct, and the number of "shifted" pegs (pegs of the correct color, but the wrong location in the code).
+
+Donald Knuth devised an algorithm which he proved could guess the combination in at most five guesses.  I have implemented this algorithm, along with creating a framework to implement different algorithms.  I also implemented two sample algorithms that utilize the same framework.  The project consists of five files: Game.class, the framework for running the game; Guesser.class, a superclass used for any sort of guessing algorithm; and three guessing classes: Knuthguesser (Knuth's algorithm), Randomguesser (an algorithm that guesses a code randomly from the remaining possible solutions), and Staticguesser (an algorithm that guesser 6 pre-determined codes which allow it to always guess correctly on the 7th guess).  Further documentation is provided within each and every file.  
